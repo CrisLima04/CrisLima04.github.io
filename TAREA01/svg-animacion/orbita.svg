@@ -1,0 +1,32 @@
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<image xlink:href="texturas/espacio.jpg"/>
+
+
+ 
+  <path id="elipse" d="m467.5,502c-198.61877,0 -359.49997,-80.55249 -359.49997,-180c0,-99.44751 160.8812,-180 359.49997,-180c198.61877,0 359.5,80.55249 359.5,180c0,99.44751 -160.88123,180 -359.5,180z" opacity="undefined" fill="none"
+  stroke="black" />
+
+<circle r="25" fill="#c192c1">
+    <animateMotion dur="6s" 
+    repeatDur="indefinite"> 
+        <mpath xlink:href="#elipse"/>    
+    </animateMotion>    
+</circle>
+
+<circle r="40" xlink:href="texturas/tierra.png">
+    <animateMotion dur="2s" 
+    repeatDur="indefinite"> 
+        <mpath xlink:href="#elipse"/>    
+    </animateMotion>    
+</circle>
+
+<circle r="15" fill="#11d0b6">
+    <animateMotion dur="4s" 
+    repeatDur="indefinite"> 
+        <mpath xlink:href="#elipse"/>    
+    </animateMotion>    
+</circle>
+
+</svg>
+
