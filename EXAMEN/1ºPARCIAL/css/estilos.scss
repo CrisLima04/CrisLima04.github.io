@@ -1,0 +1,159 @@
+// ****************************
+// Asignación de colores
+// ****************************
+$principal:#8e8e8e;
+$secundario:#0dae3d;
+$terciario:rgb(142, 238, 163);
+$texto:black;
+
+/*-----------------------------
+Tipografia
+------------------------------*/
+html{
+    font-size: 62.5%; /* Normalizar para REMS */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color:$texto;
+}
+/* Principales */
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+    margin-top: 5rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+/* Display */
+.display-6{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+.display-5{
+    font-size: 2rem;
+}
+
+/*-----------------------------
+ESTILOS COLOR PRINCIPAL
+------------------------------*/
+.bg-primary{
+    background-color: $principal !important;
+}
+.text-primary{
+    color: $texto !important;
+}
+
+/*-----------------------------
+ESTILOS COLOR SECUNDARIO
+------------------------------*/
+.bg-secondary{
+    background-color: $secundario !important;
+}
+.text-success{
+    color: $terciario !important;
+}
+
+.text-lightgreen{
+    color: $terciario !important;
+}
+
+/*-----------------------------
+ESTILOS ENCABEZADO
+------------------------------*/
+#barras-redes i{
+    color: $terciario;
+    margin-right: 1rem;
+}
+#datos-generales i{
+    font-size: 3rem;    
+    margin-right: 1.4rem;
+}
+#datos-generales span{
+    color:$texto;
+}
+.navbar-nav li a{
+    color: $terciario !important;
+    padding-right: 3rem !important;
+    font-size: 2.5rem;
+}
+
+#principal{
+    background-image: url(../images/principal01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+}
+
+#slogan{
+    text-shadow: -6rem -3.5rem .6rem gray;
+    color: $secundario;
+}
+
+.card{
+    border: none;
+}
+.card-body i{
+    font-size: 4rem;
+    text-shadow: .2rem -.4rem .1rem rgb(215, 215, 215);
+    color: $secundario;
+}
+
+.cards{
+    margin-top: 1rem;
+}
+
+.btn-primary{
+    background-color: $secundario;
+    color: white;
+    border: $texto dotted .5rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top:3rem;
+}
+
+.card-img-top{
+    border-radius: 15rem;
+    box-shadow: 5px 5px 5px 2px rgb(86, 86, 86);;
+}
+
+.margin-bottom{
+    margin-bottom: 4rem;
+}
+
+.costos{
+    color: $secundario;
+}
+
+.servicios{
+    margin-bottom: 5rem;
+}
+.servicios h2{
+    margin-bottom: 2rem;
+}
+
+.enlaces-rapidos a{
+    text-decoration: none;
+    color: $terciario;
+}
+
+footer{
+    background-color: rgb(43, 57, 47);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: $terciario;
+}
+
+
+
+
