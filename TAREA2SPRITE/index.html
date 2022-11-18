@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ens">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Sprite Sheet</title>
+    <style>
+        body {
+            font-family:sans-serif;
+        }
+        h1{
+            text-align: center;
+        }  
+        .animar{
+            margin: auto;
+            width: 512px;
+            height: 64px;
+            border: 2px solid black;
+            background-image:url(./sprite_sheet_caminar.png);
+        } 
+        .animar:hover{
+            animation:mEquis 1s steps(8) infinite;
+            cursor:pointer;
+        }
+        @keyframes mEquis {
+            100% {
+                background-position-x:-512px;
+            }
+        }
+
+        .muybridge{
+            margin: auto;
+            width:146.5px;
+            height:281px;
+            border:2px solid black; background-image: url(sprite_sheets/muybridge.png);
+            animation: mX 1.5s steps(10) infinite,
+                       mY 3s steps(2) infinite,
+        }
+
+        /*Animación horizontal*/
+        @keyframes mX{
+            100%{
+                background-position-x:-1465px;
+            }
+    
+        }
+         /*Animación vertical*/
+        @keyframes mY {
+            from{background-position-y: 0px;}
+            to{background-position-y: 568px;}
+        }
+
+    </style>
+</head>
+<body> 
+    <h1>Animación CSS</h1>
+    <div class="animar"></div>
+    <p>&nbsp;</p>
+    <div class="mybridge"></div>
+</body>
+</html>
