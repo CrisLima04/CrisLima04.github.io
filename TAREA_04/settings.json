@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" --no-startup-window /prefetch:5 --flag-switches-begin --flag-switches-end,
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+}
