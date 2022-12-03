@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phaser - Mover Capas</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.24.1/dist/phaser.min.js"></script>
+</head>
+
+<body>
+    <div id="juego"></div>
+
+    <script>
+        const phaserConfig = {
+            type: Phaser.AUTO,
+            parent: "juego",
+            width: 1152,
+            height: 256,
+            backgroundColor: "#1B4F72",
+            scene: {
+                preload: precargar,
+                create: crear,
+                update: actualizar
+            }
+        };
+
+        const juego = new Phaser.Game(phaserConfig);
+
+        function precargar() {
+            this.load.image("capa-4", "./fondos/fondo.png");
+            this.load.image("capa-3", "./sprites/nieve.png");
+            this.load.image("capa-2", "./sprites/arbol.png");
+            this.load.image("capa-1", "./sprites/santa.png");
+        }
+        function crear() {
+            capaCuatro = this.add.tileSprite(1024, 256, 2304, 256, "capa-4");
+            capaTres = this.add.tileSprite(576, 256, 1152, 256, "capa-3");
+            capaDos = this.add.tileSprite(576, 128, 1152, 340, "capa-2");
+            capaUno = this.add.tileSprite(576, 128, 1152, 512, "capa-1");
+        }
+//Eventos de entrada: activamos  las flechas del teclado
+
+
+        function actualizar() {
+            capaCuatro.tilePositionX += 0.55;
+            capaTres.tilePositionX += 0.25;
+            capaDos.tilePositionX += 0.35;
+            capaUno.tilePositionX += 0.55;
+        }
+    </script>
+</body>
+
+</html>
