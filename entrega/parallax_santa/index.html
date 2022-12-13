@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Imágenes con paralaje</title>
+	
+	<script>document.documentElement.className = 'js';</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<!-- Agregar favicon -->
+  <link rel="icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/template.min.css">
+	<link rel="stylesheet" type="text/css" href="css/template.theme.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/site.layout.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.classes.css">
+	
+	<link rel="stylesheet" href="css/jquery.parallax.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+  <style type="text/css" media="screen, projection">
+    .parallax-viewport {
+      width: 800px;
+      max-width: 60em;
+      height: 300px;
+      background-color: #aebcc9;
+	/*background:url("imagen/world.jpg")*/
+    }
+    
+    .diagram {
+      margin-top: -0.75em;
+    }
+    
+	  small {
+	    text-transform: uppercase;
+	  }
+	</style>
+
+</head>
+
+<body>
+<h1>Un trato con Santa Clauss</h1>
+
+	<div style="width:800px; margin:auto;"> <!-- div>class="site_wrap wrap" -->
+  
+    <div class="parallax-viewport" id="parallax">
+        
+        <!-- parallax layers -->
+        <div class="parallax-layer" style="width:2256px; height:461px;">
+            <img src="imagen/cielo_fondo.jpg" alt="" style="position:absolute; left:0px; top:0px;"/>
+        </div>
+        <div class="parallax-layer" style="width:1274px; height:296px;">
+            <img src="imagen/layer2_bosquenevado.png" alt="">
+        </div>
+        <div class="parallax-layer" style="width:1920px; height:257px;">
+            <img src="imagen/layer1_navidad.png" alt="" style="position:absolute; top:50px; left:-350px;">
+        </div>
+    </div>
+    
+    </div>
+
+<div class="contenedor">
+<p> 
+
+</p>
+<p>
+  Julio estaba tan enfadado por los pocos regalos que había recibido la Navidad anterior, que la carta que escribió a Papá Noel aquel año resultó tan dura que el mismo Santa Claus
+  fue a visitarlo unos días antes.
+ 
+ - ¿Por qué tanto enfado y tantos regalos? - preguntó Papá Noel - ¡Pero si tienes muchos amigos!
+ 
+ - ¡Me da igual! Quiero más juguetes y menos amigos.
+</p>
+ <p>
+ Y tan molesto estaba que el bueno de Santa Claus tuvo que proponerle un trato:
+ 
+ - Está bien. Como muchos otros niños me han pedido tener más amigos, te daré un regalo más por cada amigo al que renuncies para que se lo pueda ofrecer a otros niños.
+ 
+ - ¡Hecho! - dijo el niño sin dudar - Además, puedes quedártelos todos.
+</p>
+
+<p>
+ Aquella Navidad, Julio se encontró con una enorme montaña de regalos. Había tantos obsequios, que dos días después aún seguía abriéndolos. El niño estaba feliz, gritaba a los vientos
+ lo mucho que quería a Santa Claus, y hasta le escribió varias cartas de agradecimiento.
+ 
+ Luego comenzó a jugar con sus regalos. Eran tan alucinantes que no pudo esperar a salir a la calle para mostrárselos a los demás niños. Pero, una vez en la calle, ninguno de los niños
+ mostró interés por aquellos juguetes. Y tampoco por el propio Julio. Ni siquiera cuando este les ofreció probar los mejores y más modernos aparatos.
+ 
+ - Vaya - pensó el niño - supongo que me he quedado sin amigos. Bueno, qué más da, sigo teniendo mis juguetes.
+</p>
+ 
+<p>
+ Y Julio volvió a su casa. Durante algunas semanas disfrutó de un juguete nuevo cada día de los que Santa Claus le había traído. La emoción que sentía al estrenar un juguete todas las
+ mañanas le hizo olvidar su falta de amigos.
+ 
+ Pero no había pasado ni un mes cuando sus juguetes comenzaron a resultarle aburridos. Siempre hacían lo mismo, y la única forma de cambiar los juegos era inventándose nuevos mundos y
+ aventuras, como hacía habitualmente con sus amigos. Sin embargo, hacerlo solo no tenía mucha gracia.
+</p>
+ 
+<p>
+ Entonces empezó a echar de menos a sus amigos. Se daba cuenta de que cuando estaba con sus amigos, siempre se les ocurrían nuevas ideas y formas de adaptar sus juegos. ¡Por eso podían
+ jugar con un mismo juguete durante semanas!
+ 
+ Y tanto lo pensó, que finalmente llegó a estar convencido de que sus amigos eran mucho mejores que cualquier juguete. ¡Pero si llevaba años jugando con sus amigos y nunca se había aburrido
+ de ellos!
+ 
+ Y tras un año de mortal aburrimiento, al llegar la Navidad redactó para Papá Noel una humilde carta en la que pedía perdón por haber sido tan torpe de cambiar sus mejores regalos por unos
+ aburridos juguetes, y suplicaba recuperar todos sus antiguos amigos. Cruzó los dedos muy fuerte para que Santa Claus cumpliera su deseo.
+ 
+ Y desde entonces, no deseó por Navidad otra cosa que tener muchos amigos y poder compartir con ellos momentos de juegos y alegrías, aunque fuera junto a los viejos juguetes de siempre...
+</p>
+
+</div>
+
+
+  <script src="js/jquery1.7.2.js"></script>
+  <script src="js/jquery.event.frame.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script>
+  jQuery(document).ready(function(){
+    jQuery('#parallax .parallax-layer')
+    .parallax({
+      mouseport: jQuery('#parallax')
+    });
+  });
+  </script>
+</body>
+</html>

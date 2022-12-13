@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbol Navidad ...</title>
+
+
+</head>
+<body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800;" xml:space="preserve">
+
+<!-- animación para esfera -->
+<animate 
+   xlink:href="#msj_x5F_esfera"
+   fill="freeze" 
+   dur="0.2" 
+   begin="btn_x5F_esfera.mouseover" 
+   attributeName="display" 
+   from="none" 
+   to="block"
+    />
+<!-- Y la animación para ocultarlo cuando alejamos el cursor. -->
+<animate 
+   xlink:href="#msj_x5F_esfera" 
+   fill="freeze" 
+   dur="0.5" 
+   begin="btn_x5F_esfera.mouseout" 
+   attributeName="display" 
+   from="block" 
+   to="none" />
+
+   <!-- animación para Obsequio. -->
+<animate 
+xlink:href="#msj_x5F_Obsequio"
+fill="freeze" 
+dur="0.2" 
+begin="btn_x5F_Obsequio.mouseover" 
+attributeName="display" 
+from="none" 
+to="block"
+ />
+<!-- Y la animación para ocultarlo cuando alejamos el cursor. -->
+<animate xlink:href="#msj_x5F_Obsequio" 
+fill="freeze" 
+dur="0.5" 
+begin="btn_x5F_Obsequio.mouseout" 
+attributeName="display" 
+from="block" 
+to="none" 
+/>
+
+
+<!-- animación para Pino. -->
+<animate 
+xlink:href="#msj_x5F_Pino"
+fill="freeze" 
+dur="0.2" 
+begin="btn_x5F_Pino.mouseover" 
+attributeName="display" 
+from="none" 
+to="block"
+ />
+<!-- Y la animación para ocultarlo cuando alejamos el cursor. -->
+<animate xlink:href="#msj_x5F_Pino" 
+fill="freeze" 
+dur="0.5" 
+begin="btn_x5F_Pino.mouseout" 
+attributeName="display" 
+from="block" 
+to="none" 
+/>
+
+<!-- animación para Liston. -->
+<animate 
+xlink:href="#msj_x5F_Liston"
+fill="freeze" 
+dur="0.2" 
+begin="btn_x5F_Liston.mouseover" 
+attributeName="display" 
+from="none" 
+to="block"
+ />
+<!-- Y la animación para ocultarlo cuando alejamos el cursor. -->
+<animate xlink:href="#msj_x5F_Liston" 
+fill="freeze" 
+dur="0.5" 
+begin="btn_x5F_Liston.mouseout" 
+attributeName="display" 
+from="block" 
+to="none" 
+/>
+
+
+<style type="text/css">
+	.st0{opacity:0.1;fill:white;}
+	.st1{fill:#AA05D3;}
+	.st2{font-family:'CenturyGothic-Bold';}
+	.st3{font-size:18px;}
+	.st4{fill:#FF8C00;}
+	.st5{fill:#FFCA48;}
+	.st6{fill:#65AEE5;}
+	.st7{fill:#9FE75B;}
+</style>
+
+
+
+
+<g id="arbol">
+	<image style="overflow:visible;" width="500" height="500" xlink:href="./images/Arbol.png"  transform="matrix(1 0 0 1 307 75)">
+	</image>
+</g>
+
+<g id="botones">
+	<ellipse id="btn_x5F_esfera" class="st0" cx="641.5" cy="315" rx="90.5" ry="109"/>
+	<circle id="btn_x5F_Obsequio" class="st0" cx="402.5" cy="334.5" r="90.5"/>
+	<ellipse id="btn_x5F_pino" class="st0" cx="554.5" cy="498.5" rx="46.5" ry="83.5"/>
+	<circle id="btn_x5F_Liston" class="st0" cx="640" cy="525" r="49"/>
+
+
+
+</g>
+<g id="mensajes">
+
+    <g id="msj_x5F_esfera" style="display: none;">
+		<path stroke="#FFFFFF" stroke-miterlimit="10" class="st1" d="M583.11,215h-88.62c-14.63,0-26.49,11.86-26.49,26.49v25.95c0,14.63,11.86,26.49,26.49,26.49h74.63L592.6,315
+			l5.4-25.64c7-4.77,11.6-12.8,11.6-21.91v-25.95C609.6,226.86,597.74,215,583.11,215z"/>
+		<text transform="matrix(1 0 0 1 508.6577 247.6807)"><tspan x="0" y="0" >Esfera</tspan><tspan x="-18" y="21.6" >navideña</tspan></text>
+	</g>
+
+	
+	<g id="msj_x5F_Obsequio" style="display:none;">
+		<path stroke="#FFFFFF" stroke-miterlimit="10" class="st4" d="M329.65,442.04h-88.62c-14.63,0-26.49,11.86-26.49,26.49v25.95c0,14.63,11.86,26.49,26.49,26.49h74.63
+			l23.48,21.06l5.4-25.64c7-4.77,11.6-12.8,11.6-21.91v-25.95C356.14,453.9,344.28,442.04,329.65,442.04z"/>
+		<text transform="matrix(1 0 0 1 271.0403 474.7232)"><tspan x="0" y="0" class="st2 st3">Obsequios</tspan></text>
+	</g>
+	<g id="msj_x5F_Pino" style="display:none;">
+		<path stroke="#FFFFFF" stroke-miterlimit="10" class="st5" d="M543.65,357.04h-88.62c-14.63,0-26.49,11.86-26.49,26.49v25.95c0,14.63,11.86,26.49,26.49,26.49h74.63
+			l23.48,21.06l5.4-25.64c7-4.77,11.6-12.8,11.6-21.91v-25.95C570.14,368.9,558.28,357.04,543.65,357.04z"/>
+		<text transform="matrix(1 0 0 1 473.5359 402.7232)" class="st2 st3">Pino de Navidad</text>
+	</g>
+	<g id="msj_x5F_Liston" style="display:none;">
+		<path stroke="#FFFFFF" stroke-miterlimit="10" class="st5" d="M656.03,664.04h88.62c14.63,0,26.49-11.86,26.49-26.49V611.6c0-14.63-11.86-26.49-26.49-26.49h-74.63
+			l-23.48-21.06l-5.4,25.64c-7,4.77-11.6,12.8-11.6,21.91v25.95C629.54,652.18,641.4,664.04,656.03,664.04z"/>
+		<text transform="matrix(1 0 0 1 654.8962 630.7232)" class="st2 st3">Liston</text>
+	</g>
+</g>
+<p> solo info</p>
+
+</svg>
+</body>
+</html>
